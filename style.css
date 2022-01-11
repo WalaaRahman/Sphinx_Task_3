@@ -1,0 +1,63 @@
+/* .content{
+    position: relative;
+} */
+
+.container {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#content {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#dummy_img {
+    width: 35px;
+    height: 35px;
+}
+
+#help_img {
+    width: 35px;
+    height: 35px;
+}
+
+#blue_bg {
+    width: 800px;
+    height: 450px;
+}
+
+#footer_section {
+    width: 800px;
+    height: 80px;
+}
+
+#reset {
+    width: 3em;
+    height: 3em;
+    margin: 2%;
+}
+
+#show_answer {
+    width: 4em;
+    height: 3em;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 50%;
+}
+
+#overlay_div {
+    /* display: none; */
+    background-color: white;
+    border: 4px solid #F5821F;
+    border-radius: 15px;
+    top: -3%;
+    height: 105%;
+    left: 2%;
+    right: 2%;
+}
+
+.q_img {
+    width: 150px;
+    height: 100px;
+}

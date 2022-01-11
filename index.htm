@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Loader -->
+        <div id="loading">
+            <img id="loading_img" src="./assets/Preloader_2.gif" alt="Loading..." />
+        </div>
+        <!-- Page Content -->
+        <div id="content" style="display: none;">
+            <!-- Top Section -->
+            <div class=" d-flex mb-4">
+                <div class="title p-2 ">
+                    <h5> Complete the words.</h5>
+                </div>
+                <div class="p-2 ml-auto">
+                    <img id="dummy_img" src="assets/resourse_icon.png">
+                    <img class="ml-3" id="help_img" src="assets/help_icon.png">
+                </div>
+            </div>
+            <div class="row">
+                <!-- Middle Section -->
+                <div class="position-relative" id="blue_bg" class="" style="background-color: #0FA0C5;">
+                    <div class="position-absolute" id="overlay_div">
+                        <div class="row">
+                            <div class="col-sm-10 m-3 d-flex justify-content-center">
+                                <button class="m-1">a</button>
+                                <button class="m-1">p</button>
+                            </div>
+                            <div class="col-sm-10 d-flex m-5 ">
+                                <h1>1</h1> &nbsp;&nbsp;&nbsp;&nbsp;
+                                <h1>t</h1>&nbsp;
+                                <h1 onclick="alert('Clicked here !! ');">__</h1>&nbsp;
+                                <h1>p</h1>
+
+                                <img class="q_img" src="assets/tap.png">
+                                <img class="q_img" src="assets/pat.png">
+                            </div>
+                            <div class="col-sm-8 d-flex">
+                                <img class="q_img" src="assets/map.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Last Section -->
+                <div id="footer_section" class="d-flex" style="background-color: #DEECF6;">
+                    <img id="reset" src="assets/replay_icon.png">
+                    <img id="show_answer" src="assets/showAns_icon.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
