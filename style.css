@@ -61,3 +61,22 @@
     width: 150px;
     height: 100px;
 }
+
+#q_3 {
+    margin-left: 30%;
+}
+
+.buttons {
+    margin-left: 40%;
+}
+
+.btn {
+    border: 2px solid #0FA0C5;
+    background-color: white;
+    color: black;
+    padding: 7px 14px;
+    margin: 2%;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
