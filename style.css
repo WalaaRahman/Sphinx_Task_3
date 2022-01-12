@@ -104,9 +104,14 @@
     border-bottom: 2px solid black;
 }
 
-.q1_try {
+.answer_div {
     writing-mode: vertical-rl;
     text-orientation: upright;
+    margin-bottom: 25px;
+}
+
+.answer {
+    background-color: thistle;
 }
 
 .answer:hover {
@@ -119,4 +124,44 @@
 
 #show_answer {
     cursor: pointer;
+}
+
+#answer_icon_1 {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    /* visibility: hidden; */
+}
+
+
+/* #wrong_icon_1 {
+    width: 30px;
+    height: 30px;
+    visibility: hidden;
+    background-color: turquoise;
+} */
+
+#right_icon_2 {
+    width: 30px;
+    height: 30px;
+    /* display: none; */
+    visibility: hidden;
+}
+
+#wrong_icon_2 {
+    width: 30px;
+    height: 30px;
+    visibility: hidden;
+}
+
+#right_icon_3 {
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+#wrong_icon_3 {
+    width: 30px;
+    height: 30px;
+    visibility: hidden;
 }
