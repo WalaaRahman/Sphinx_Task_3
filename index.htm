@@ -45,11 +45,11 @@
                                 <div class=" d-flex ml-3 align-items-center">
                                     <h2>1</h2> &nbsp;
                                     <h2>t</h2> &nbsp;
-                                    <div class="row  q1_try  " onclick="alert('Clicked here 1 !! ');">
-                                        <h2 class="">a</h2>
-                                        <h2 style=" width: 35px; border-bottom: 2px solid black;"></h2>
+                                    <div class="row  q1_try  ">
+                                        <h2 id="answer_1" class="answer" onclick="checkAnswer_1()">&nbsp;</h2>
+                                        <h2 id="blank_space"></h2>
                                     </div>
-                                    <h2>&nbsp;&nbsp;p&nbsp;</h2>
+                                    <h2>&nbsp;p&nbsp;</h2>
                                     <img class="q_img" src="assets/tap.png">
                                 </div>
 
@@ -57,10 +57,13 @@
                                 <!-- Q-2 -->
 
                                 <div id="q_2" class="d-flex align-items-center">
-                                    <h2>2</h2>
-                                    <h2 onclick="alert('Clicked here 2 !! ');"></h2>
-                                    <h2>a</h2>
-                                    <h2>t</h2>
+                                    <h2>2&nbsp;</h2>
+                                    <div class="row  q1_try  ">
+                                        <h2 id="answer_2" class="answer" onclick="checkAnswer_2()">&nbsp;</h2>
+                                        <h2 id="blank_space"></h2>
+                                    </div>
+                                    <h2>&nbsp;a</h2>
+                                    <h2>&nbsp;t&nbsp;</h2>
                                     <img class="q_img" src="assets/pat.png">
                                 </div>
 
@@ -68,10 +71,13 @@
                             <div id="q_3" class="col-sm-8 mt-5 d-flex ">
                                 <!-- Q-3 -->
                                 <div class="d-flex align-items-center">
-                                    <h2>3</h2>
+                                    <h2>3&nbsp;</h2>
                                     <h2>m</h2>
-                                    <h2 class="underlined" onclick="alert('Clicked here 3 !! ');"></h2>
-                                    <h2>p</h2>
+                                    <div class="row  q1_try  ">
+                                        <h2 id="answer_3" class="answer" onclick="checkAnswer_3()">&nbsp;</h2>
+                                        <h2 id="blank_space"></h2>
+                                    </div>
+                                    <h2>p&nbsp;</h2>
                                     <img class="q_img" src="assets/map.png">
                                 </div>
                             </div>
@@ -80,8 +86,8 @@
                 </div>
                 <!-- Last Section -->
                 <div id="footer_section" class="d-flex" style="background-color: #DEECF6;">
-                    <img id="reset" src="assets/replay_icon.png">
-                    <img id="show_answer" src="assets/showAns_icon.png">
+                    <img id="reset" onclick="reset()" src="assets/replay_icon.png">
+                    <img id="show_answer" onclick="showAnswer()" src="assets/showAns_icon.png">
                 </div>
             </div>
         </div>

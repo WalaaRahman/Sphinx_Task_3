@@ -98,7 +98,25 @@
     margin-left: 1px;
 }
 
+#blank_space {
+    position: static;
+    width: 35px;
+    border-bottom: 2px solid black;
+}
+
 .q1_try {
     writing-mode: vertical-rl;
     text-orientation: upright;
+}
+
+.answer:hover {
+    cursor: pointer;
+}
+
+#reset {
+    cursor: pointer;
+}
+
+#show_answer {
+    cursor: pointer;
 }
