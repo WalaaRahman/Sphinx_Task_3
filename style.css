@@ -110,10 +110,6 @@
     margin-bottom: 25px;
 }
 
-.answer {
-    background-color: thistle;
-}
-
 .answer:hover {
     cursor: pointer;
 }
@@ -129,39 +125,77 @@
 #answer_icon_1 {
     width: 30px;
     height: 30px;
-    border: 1px solid white;
-    /* visibility: hidden; */
-}
-
-
-/* #wrong_icon_1 {
-    width: 30px;
-    height: 30px;
-    visibility: hidden;
-    background-color: turquoise;
-} */
-
-#right_icon_2 {
-    width: 30px;
-    height: 30px;
-    /* display: none; */
     visibility: hidden;
 }
 
-#wrong_icon_2 {
+#answer_icon_2 {
     width: 30px;
     height: 30px;
     visibility: hidden;
 }
 
-#right_icon_3 {
-    width: 30px;
-    height: 30px;
-    display: none;
-}
-
-#wrong_icon_3 {
+#answer_icon_3 {
     width: 30px;
     height: 30px;
     visibility: hidden;
+}
+
+@media (min-width: 834px) {
+    body {
+        zoom: 100%;
+    }
+}
+
+@media (min-width: 749px) and (max-width: 833px) {
+    body {
+        zoom: 90%;
+    }
+}
+
+@media (min-width: 666px) and (max-width: 748px) {
+    body {
+        zoom: 80%;
+    }
+}
+
+@media (min-width: 583px) and (max-width: 665px) {
+    body {
+        zoom: 70%;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 582px) {
+    body {
+        zoom: 60%;
+    }
+}
+
+@media (min-width: 416px) and (max-width: 499px) {
+    body {
+        zoom: 50%;
+    }
+}
+
+@media (min-width: 333px) and (max-width: 415px) {
+    body {
+        zoom: 40%;
+    }
+}
+
+@media (min-width: 250px) and (max-width: 332px) {
+    body {
+        zoom: 30%;
+    }
+}
+
+@media (min-width: 167px) and (max-width: 249px) {
+    body {
+        zoom: 20%;
+    }
+}
+
+@media (max-width: 166px) {
+    body {
+        zoom: 17%;
+    }
 }
