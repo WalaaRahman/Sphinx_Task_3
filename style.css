@@ -1,14 +1,17 @@
-/* .content{
-    position: relative;
-} */
-
 .container {
     margin-left: 15%;
     margin-right: 15%;
+    margin-top: 1%;
+}
+
+#top_section {
+    width: 830px;
+    /* height: 80px; */
+    /* background-color: thistle; */
 }
 
 #content {
-    margin-left: 10%;
+    margin-left: 8%;
     margin-right: 10%;
 }
 
@@ -23,12 +26,12 @@
 }
 
 #blue_bg {
-    width: 800px;
-    height: 450px;
+    width: 830px;
+    height: 455px;
 }
 
 #footer_section {
-    width: 800px;
+    width: 830px;
     height: 80px;
 }
 
@@ -68,15 +71,34 @@
 
 .buttons {
     margin-left: 40%;
+    margin-top: 3%;
 }
 
 .btn {
     border: 2px solid #0FA0C5;
+    border-radius: 10px;
     background-color: white;
     color: black;
-    padding: 7px 14px;
     margin: 2%;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: 600;
     cursor: pointer;
+}
+
+.btn2 {
+    margin-left: 3%;
+}
+
+.underlined {
+    /* border-bottom: 2px solid black; */
+    /* text-decoration: underline;
+    white-space: pre; */
+    flex-grow: 1;
+    border-bottom: 2px solid black;
+    margin-left: 1px;
+}
+
+.q1_try {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
 }
