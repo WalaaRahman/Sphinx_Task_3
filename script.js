@@ -1,5 +1,5 @@
 setTimeout(function gif() {
-    document.getElementById("loading_img").style.display = "none";
+    document.getElementById("loading").style.display = "none";
 
 }, 600)
 
