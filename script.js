@@ -152,11 +152,11 @@ function checkAllRight() {
 
         // disable choices btns (a & p)
         document.getElementById("btn1").disabled = true;
-        document.getElementById("btn1").style.opacity = "0.7";
+        document.getElementById("btn1").style.opacity = "0.4";
         document.getElementById("btn1").style.cursor = "auto";
 
         document.getElementById("btn2").disabled = true;
-        document.getElementById("btn2").style.opacity = "0.7";
+        document.getElementById("btn2").style.opacity = "0.4";
         document.getElementById("btn2").style.cursor = "auto";
 
 
@@ -190,11 +190,15 @@ function reset() {
     document.getElementById("btn1").style.backgroundColor = "white";
     document.getElementById("btn1").style.color = "black";
     document.getElementById("btn1").style.cursor = "pointer";
+    document.getElementById("btn1").style.opacity = "1";
+
 
 
     document.getElementById("btn2").style.backgroundColor = "white";
     document.getElementById("btn2").style.color = "black";
     document.getElementById("btn2").style.cursor = "pointer";
+    document.getElementById("btn2").style.opacity = "1";
+
 
 
 
@@ -224,9 +228,13 @@ function showAnswer() {
     // Disable choices btns (a & p)
     document.getElementById("btn1").disabled = true;
     document.getElementById("btn1").style.cursor = "auto";
+    document.getElementById("btn1").style.opacity = "0.4";
+
 
     document.getElementById("btn2").disabled = true;
     document.getElementById("btn2").style.cursor = "auto";
+    document.getElementById("btn2").style.opacity = "0.4";
+
 
 
 
