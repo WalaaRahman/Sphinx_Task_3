@@ -38,27 +38,29 @@ function checkAnswer_1() {
     if (choice === 'a') {
 
 
+        rightAudio.play();
 
         document.getElementById("answer_1").innerText = "a";
         document.getElementById("answer_icon_1").src = "assets/tikMark-small.png";
         document.getElementById("answer_icon_1").style.visibility = "visible";
-        rightAudio.play();
         // console.log(document.getElementById("answer_icon_1").src);
 
         choice = null;
         document.getElementById("btn1").style.backgroundColor = "white";
         document.getElementById("btn1").style.color = "black";
     } else if (choice === 'p') {
+        wrongAudio.play();
 
         document.getElementById("answer_1").innerText = "p";
         document.getElementById("answer_icon_1").src = "assets/crossMark-small.png";
         document.getElementById("answer_icon_1").style.visibility = "visible";
+        document.getElementById("answer_icon_1").classList.add('animate__flash');
 
-        wrongAudio.play();
         setTimeout(function wrongAnswer() {
             document.getElementById("answer_1").innerHTML = "&nbsp;";
             document.getElementById("answer_icon_1").src = " ";
             document.getElementById("answer_icon_1").style.visibility = "hidden";
+            document.getElementById("answer_icon_1").classList.remove('animate__flash');
 
 
         }, 800)
@@ -85,15 +87,18 @@ function checkAnswer_2() {
         document.getElementById("btn2").style.backgroundColor = "white";
         document.getElementById("btn2").style.color = "black";
     } else if (choice === 'a') {
+        wrongAudio.play();
 
         document.getElementById("answer_2").innerText = "a";
         document.getElementById("answer_icon_2").src = "assets/crossMark-small.png";
         document.getElementById("answer_icon_2").style.visibility = "visible";
-        wrongAudio.play();
+        document.getElementById("answer_icon_2").classList.add('animate__flash');
         setTimeout(function wrongAnswer() {
             document.getElementById("answer_2").innerHTML = "&nbsp;";
             document.getElementById("answer_icon_2").src = " ";
             document.getElementById("answer_icon_2").style.visibility = "hidden";
+            document.getElementById("answer_icon_2").classList.remove('animate__flash');
+
 
 
         }, 800)
@@ -115,14 +120,18 @@ function checkAnswer_3() {
         document.getElementById("btn1").style.backgroundColor = "white";
         document.getElementById("btn1").style.color = "black";
     } else if (choice === 'p') {
+        wrongAudio.play();
+
         document.getElementById("answer_3").innerText = "p";
         document.getElementById("answer_icon_3").src = "assets/crossMark-small.png";
         document.getElementById("answer_icon_3").style.visibility = "visible";
-        wrongAudio.play();
+        document.getElementById("answer_icon_3").classList.add('animate__flash');
         setTimeout(function wrongAnswer() {
             document.getElementById("answer_3").innerHTML = "&nbsp;";
             document.getElementById("answer_icon_3").src = " ";
             document.getElementById("answer_icon_3").style.visibility = "hidden";
+            document.getElementById("answer_icon_3").classList.remove('animate__flash');
+
 
 
         }, 800)
@@ -139,9 +148,17 @@ function checkAllRight() {
         // disable show answer btn
         document.getElementById("show_answer").disabled = true;
         document.getElementById("show_answer").style.opacity = "0.7";
+        document.getElementById("show_answer").style.cursor = "auto";
+
         // disable choices btns (a & p)
         document.getElementById("btn1").disabled = true;
+        document.getElementById("btn1").style.opacity = "0.7";
+        document.getElementById("btn1").style.cursor = "auto";
+
         document.getElementById("btn2").disabled = true;
+        document.getElementById("btn2").style.opacity = "0.7";
+        document.getElementById("btn2").style.cursor = "auto";
+
 
     }
 }
@@ -154,6 +171,9 @@ function reset() {
 
     document.getElementById("show_answer").disabled = false;
     document.getElementById("show_answer").style.opacity = "1";
+    document.getElementById("show_answer").style.cursor = "pointer";
+
+
 
     document.getElementById("answer_icon_1").style.visibility = "hidden";
     document.getElementById("answer_icon_1").src = " ";
@@ -166,6 +186,16 @@ function reset() {
 
     document.getElementById("btn1").disabled = false;
     document.getElementById("btn2").disabled = false;
+
+    document.getElementById("btn1").style.backgroundColor = "white";
+    document.getElementById("btn1").style.color = "black";
+    document.getElementById("btn1").style.cursor = "pointer";
+
+
+    document.getElementById("btn2").style.backgroundColor = "white";
+    document.getElementById("btn2").style.color = "black";
+    document.getElementById("btn2").style.cursor = "pointer";
+
 
 
 
@@ -190,10 +220,14 @@ function showAnswer() {
     // Diabeling Button (Show Answers)
     document.getElementById("show_answer").disabled = true;
     document.getElementById("show_answer").style.opacity = "0.7";
-    console.log("Hello from Show Answers ");
+    document.getElementById("show_answer").style.cursor = "auto";
     // Disable choices btns (a & p)
     document.getElementById("btn1").disabled = true;
+    document.getElementById("btn1").style.cursor = "auto";
+
     document.getElementById("btn2").disabled = true;
+    document.getElementById("btn2").style.cursor = "auto";
+
 
 
 }
