@@ -52,12 +52,6 @@ function checkAnswer_1() {
 
     }
     checkAllRight();
-    //  document.getElementById("answer_icon_1").src = img1_src;
-    //  document.getElementById("answer_icon_1").visibility = img1_visibility;
-
-    // console.log(document.getElementById("answer_1").innerText);
-    // console.log(document.getElementById("answer_icon_1").visibility);
-    // console.log(document.getElementById("answer_icon_1").src);
 }
 
 
@@ -107,6 +101,7 @@ function checkAllRight() {
     if (document.getElementById("answer_1").innerText === "a" &&
         document.getElementById("answer_2").innerText === "p" &&
         document.getElementById("answer_3").innerText === "a") {
+
         document.getElementById("show_answer").disabled = true;
         document.getElementById("show_answer").style.opacity = "0.7";
     }
@@ -117,12 +112,16 @@ function reset() {
     document.getElementById("answer_1").innerHTML = "&nbsp;";
     document.getElementById("answer_2").innerHTML = "&nbsp;";
     document.getElementById("answer_3").innerHTML = "&nbsp;";
+
     document.getElementById("show_answer").disabled = false;
     document.getElementById("show_answer").style.opacity = "1";
+
     document.getElementById("answer_icon_1").style.visibility = "hidden";
     document.getElementById("answer_icon_1").src = " ";
+
     document.getElementById("answer_icon_2").style.visibility = "hidden";
     document.getElementById("answer_icon_2").src = " ";
+
     document.getElementById("answer_icon_3").style.visibility = "hidden";
     document.getElementById("answer_icon_3").src = " ";
 
@@ -133,9 +132,20 @@ function reset() {
 }
 
 function showAnswer() {
+    // Q 1
     document.getElementById("answer_1").innerText = "a";
+    document.getElementById("answer_icon_1").src = "assets/tikMark-small.png";
+    document.getElementById("answer_icon_1").style.visibility = "visible";
+    // Q2
     document.getElementById("answer_2").innerText = "p";
+    document.getElementById("answer_icon_2").src = "assets/tikMark-small.png";
+    document.getElementById("answer_icon_2").style.visibility = "visible";
+    // Q3
     document.getElementById("answer_3").innerText = "a";
+    document.getElementById("answer_icon_3").src = "assets/tikMark-small.png";
+    document.getElementById("answer_icon_3").style.visibility = "visible";
+
+    // Diabeling Button (Show Answers)
     document.getElementById("show_answer").disabled = true;
     document.getElementById("show_answer").style.opacity = "0.7";
     console.log("Hello from Show Answers ");
