@@ -32,7 +32,7 @@
        display: none;
        position: absolute;
        top: 70px;
-       left: 280px;
+       left: 50px;
        pointer-events: visible;
        opacity: 1;
    }
@@ -50,7 +50,7 @@
        display: none;
        position: absolute;
        top: 70px;
-       left: 280px;
+       left: 50px;
        pointer-events: visible;
        opacity: 1;
    }
@@ -196,6 +196,22 @@
        body {
            zoom: 100%;
        }
+       #dummy_div {
+           display: none;
+           position: absolute;
+           top: 70px;
+           left: 280px;
+           pointer-events: visible;
+           opacity: 1;
+       }
+       #help_div {
+           display: none;
+           position: absolute;
+           top: 70px;
+           left: 280px;
+           pointer-events: visible;
+           opacity: 1;
+       }
    }
    
    @media (min-width: 749px) and (max-width: 833px) {
@@ -218,7 +234,7 @@
    
    @media (min-width: 500px) and (max-width: 582px) {
        body {
-           zoom: 100%;
+           zoom: 60%;
        }
    }
    
