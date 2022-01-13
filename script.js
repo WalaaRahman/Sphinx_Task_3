@@ -1,9 +1,13 @@
 setTimeout(function gif() {
     document.getElementById("loading_img").style.display = "none";
+
 }, 600)
 
 setTimeout(function content() {
     document.getElementById("content").style.display = "block";
+    document.getElementById("dummy_div").style.display = "none";
+    document.getElementById("help_div").style.display = "none";
+
 }, 550)
 
 var choice;
@@ -151,4 +155,35 @@ function showAnswer() {
     console.log("Hello from Show Answers ");
 
 
+}
+
+function dummyImage() {
+    document.getElementById("content").style.pointerEvents = "none";
+    document.getElementById("content").style.opacity = "0.4";
+
+    document.getElementById("dummy_div").style.display = "block";
+}
+
+function closeDummyImage() {
+
+    document.getElementById("content").style.pointerEvents = "visible";
+    document.getElementById("content").style.opacity = "1";
+
+    document.getElementById("dummy_div").style.display = "none";
+}
+
+function help() {
+    document.getElementById("content").style.pointerEvents = "none";
+    document.getElementById("content").style.opacity = "0.4";
+
+    document.getElementById("help_div").style.display = "block";
+
+}
+
+function closeHelp() {
+
+    document.getElementById("content").style.pointerEvents = "visible";
+    document.getElementById("content").style.opacity = "1";
+
+    document.getElementById("help_div").style.display = "none";
 }
