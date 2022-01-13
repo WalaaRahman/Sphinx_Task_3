@@ -18,111 +18,114 @@
     <div id="loading">
         <img id="loading_img" src="./assets/Preloader_2.gif" alt="Loading..." />
     </div>
+    <div id="outer_div">
+        <!-- Page Content -->
+        <div id="content" class="position-relative animate__animated animate__zoomIn" style="display: none;">
 
-    <!-- Page Content -->
-    <div id="content" class="position-relative animate__animated animate__zoomIn" style="display: none;">
-
-        <!-- Top Section -->
-        <div class="d-flex justify-content-center mt-4">
-            <div class="d-flex justify-content-between" style="width: 800px;">
-                <h5> Complete the words.</h5>
-                <div style="background-color: rgb(255, 255, 255);">
-                    <img id="dummy_img" onclick="dummyImage()" src="assets/resourse_icon.png" style="width: 35px;height: 35px;">
-                    <img class="ml-2" onclick="help()" id="help_img" src="assets/help_icon.png" style="width: 35px;height: 35px;">
+            <!-- Top Section -->
+            <div class="d-flex justify-content-center mt-4">
+                <div class="d-flex justify-content-between" style="width: 800px;">
+                    <h5> Complete the words.</h5>
+                    <div style="background-color: rgb(255, 255, 255);">
+                        <img id="dummy_img" onclick="dummyImage()" src="assets/resourse_icon.png" style="width: 35px;height: 35px;">
+                        <img class="ml-2" onclick="help()" id="help_img" src="assets/help_icon.png" style="width: 35px;height: 35px;">
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Middle Section -->
-        <div class="d-flex justify-content-center mt-4">
-            <div class="d-flex justify-content-center position-relative" style="width: 830px; height: 460px; background-color: #0fa0c5;">
-                <div id="unselect" class="row position-absolute " style="width: 790px;height: 105%;top: -10px; background-color: white; border-radius: 15px; border: 3px solid #f5821f;">
-                    <div class="col-10 buttons d-flex mb-4">
-                        <input id="btn1" class="btn " onclick="choiceA()" type="button" value="a" class="m-1">
-                        <input id="btn2" class="btn " onclick="choiceP()" type="button" value="p" class="m-1">
-                    </div>
-                    <!-- <div class="row d-flex justify-content-between"> -->
-                    <!-- Q-1 -->
-                    <div class="col-6 d-flex p-2 align-items-center">
-                        <h2>1</h2> &nbsp;
-                        <h2>t</h2> &nbsp;
-                        <div class="row  answer_div  ">
 
-                            <img id="answer_icon_1"></img>
-
-                            <h2 id="answer_1" class="answer" onclick="checkAnswer_1()">
-                                &nbsp;
-                            </h2>
-                            <h2 id="blank_space"></h2>
+            <!-- Middle Section -->
+            <div class="d-flex justify-content-center mt-4">
+                <div class="d-flex justify-content-center position-relative" style="width: 830px; height: 460px; background-color: #0fa0c5;">
+                    <div id="unselect" class="row position-absolute " style="width: 790px;height: 105%;top: -10px; background-color: white; border-radius: 15px; border: 3px solid #f5821f;">
+                        <div class="col-10 buttons d-flex mb-4">
+                            <input id="btn1" class="btn " onclick="choiceA()" type="button" value="a" class="m-1">
+                            <input id="btn2" class="btn " onclick="choiceP()" type="button" value="p" class="m-1">
                         </div>
-                        <h2>&nbsp;p&nbsp;</h2>
-                        <img class="q_img" src="assets/tap.png">
-                    </div>
-
-
-                    <!-- Q-2 -->
-
-                    <div class="col-6 d-flex p-2 align-items-center">
-                        <h2>2</h2> &nbsp;
-                        <div class="row  answer_div  ">
-
-                            <img id="answer_icon_2"></img>
-
-                            <h2 id="answer_2" class="answer" onclick="checkAnswer_2()">
-                                &nbsp;
-                            </h2>
-                            <h2 id="blank_space"></h2>
-                        </div>
-                        <h2>a</h2> &nbsp;
-                        <h2>&nbsp;t&nbsp;</h2>
-                        <img class="q_img" src="assets/pat.png">
-                    </div>
-
-                    <!-- </div> -->
-                    <div id="q_3 " class="col-12 mt-5 mb-5 d-flex justify-content-center ">
-                        <!-- Q-3 -->
-                        <div class="d-flex align-items-center ">
-                            <h2>3</h2> &nbsp;
-                            <h2>m</h2> &nbsp;
+                        <!-- <div class="row d-flex justify-content-between"> -->
+                        <!-- Q-1 -->
+                        <div class="col-6 d-flex p-2 align-items-center">
+                            <h2>1</h2> &nbsp;
+                            <h2>t</h2> &nbsp;
                             <div class="row  answer_div  ">
 
-                                <img id="answer_icon_3"></img>
+                                <img id="answer_icon_1"></img>
 
-                                <h2 id="answer_3" class="answer" onclick="checkAnswer_3()">
+                                <h2 id="answer_1" class="answer" onclick="checkAnswer_1()">
                                     &nbsp;
                                 </h2>
                                 <h2 id="blank_space"></h2>
                             </div>
                             <h2>&nbsp;p&nbsp;</h2>
-                            <img class="q_img" src="assets/map.png">
+                            <img class="q_img" src="assets/tap.png">
+                        </div>
+
+
+                        <!-- Q-2 -->
+
+                        <div class="col-6 d-flex p-2 align-items-center">
+                            <h2>2</h2> &nbsp;
+                            <div class="row  answer_div  ">
+
+                                <img id="answer_icon_2"></img>
+
+                                <h2 id="answer_2" class="answer" onclick="checkAnswer_2()">
+                                    &nbsp;
+                                </h2>
+                                <h2 id="blank_space"></h2>
+                            </div>
+                            <h2>a</h2> &nbsp;
+                            <h2>&nbsp;t&nbsp;</h2>
+                            <img class="q_img" src="assets/pat.png">
+                        </div>
+
+                        <!-- </div> -->
+                        <div id="q_3 " class="col-12 mt-5 mb-5 d-flex justify-content-center ">
+                            <!-- Q-3 -->
+                            <div class="d-flex align-items-center ">
+                                <h2>3</h2> &nbsp;
+                                <h2>m</h2> &nbsp;
+                                <div class="row  answer_div  ">
+
+                                    <img id="answer_icon_3"></img>
+
+                                    <h2 id="answer_3" class="answer" onclick="checkAnswer_3()">
+                                        &nbsp;
+                                    </h2>
+                                    <h2 id="blank_space"></h2>
+                                </div>
+                                <h2>&nbsp;p&nbsp;</h2>
+                                <img class="q_img" src="assets/map.png">
+                            </div>
                         </div>
                     </div>
+
+
                 </div>
+            </div>
 
+            <!-- Last Section -->
+            <div class="d-flex justify-content-center">
+                <div class="d-flex align-items-center p-4" style="width: 830px; height: 80px; background-color: #DEECF6;">
+                    <img id="reset " onclick="reset() " src="assets/replay_icon.png " style="width: 50px;height: auto;cursor: pointer;margin-top: 3%;">
+                    <img id="show_answer" onclick="showAnswer() " src="assets/showAns_icon.png " style="width: 60px;height: auto;cursor: pointer;margin-left: 50%;margin-top: 3%;">
 
+                </div>
             </div>
         </div>
-
-        <!-- Last Section -->
-        <div class="d-flex justify-content-center">
-            <div class="d-flex align-items-center p-4" style="width: 830px; height: 80px; background-color: #DEECF6;">
-                <img id="reset " onclick="reset() " src="assets/replay_icon.png " style="width: 50px;height: auto;cursor: pointer;margin-top: 3%;">
-                <img id="show_answer" onclick="showAnswer() " src="assets/showAns_icon.png " style="width: 60px;height: auto;cursor: pointer;margin-left: 50%;margin-top: 3%;">
-
+        <div id="dummy_div">
+            <div id="dummy_content">
+                <img onclick="closeDummyImage()" class="position-sticky close_btn" src="assets/close_icon.png">
+                <img src="assets/dummy.jpg" style="width: 900px;height: 565px;border-radius: 15px;">
+            </div>
+        </div>
+        <div id="help_div">
+            <div id="help_content" class="position-relative">
+                <img onclick="closeHelp()" class="position-sticky close_btn" src="assets/close_icon.png"> Help content goes here.
             </div>
         </div>
     </div>
-    <div id="dummy_div">
-        <div id="dummy_content" class="position-relative">
-            <img onclick="closeDummyImage()" class="position-sticky close_btn" src="assets/close_icon.png">
-            <img src="assets/dummy.jpg" style="width: 900px;height: 565px;border-radius: 15px;">
-        </div>
-    </div>
-    <div id="help_div">
-        <div id="help_content" class="position-relative">
-            <img onclick="closeHelp()" class="position-sticky close_btn" src="assets/close_icon.png"> Help content goes here.
-        </div>
-    </div>
+
 </body>
 
 
