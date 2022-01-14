@@ -17,12 +17,15 @@ rightAudio.src = './assets/right.mp3';
 var wrongAudio = new Audio();
 wrongAudio.src = './assets/wrong.mp3';
 
-
 function choiceA() {
 
     choice = "a";
     document.getElementById("btn1").style.backgroundColor = "#0FA0C5";
     document.getElementById("btn1").style.color = "white";
+
+    document.getElementById("btn2").style.backgroundColor = "white";
+    document.getElementById("btn2").style.color = "black";
+
 
 }
 
@@ -31,6 +34,9 @@ function choiceP() {
     choice = "p";
     document.getElementById("btn2").style.backgroundColor = "#0FA0C5";
     document.getElementById("btn2").style.color = "white";
+
+    document.getElementById("btn1").style.backgroundColor = "white";
+    document.getElementById("btn1").style.color = "black";
 
 }
 

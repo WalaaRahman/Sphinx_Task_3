@@ -11,19 +11,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/eqcss/1.9.2/EQCSS.min.js" integrity="sha512-yfw7F0e6Vqdxeg6nDlK4l4+pyBvwozVA61StkFRHcwW2dTAIRa4rfmvi4xXmcRmcnq4NI3jbOY4B8cc25n5SkA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/eqcss/1.9.2/EQCSS-polyfills.js" integrity="sha512-Z5bbkv9n6Sy4kpiPFn1evlthqOljbU4Vr3pkIWLGMxM6/aBzaz8Ejy3Y1R/o/tu2ZF8TJrtXJJtnjaurihGqlw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/eqcss/1.9.2/EQCSS-polyfills.min.js" integrity="sha512-Io6cpd8PlB4UY1JYCy1DzrfG+56EWKTXnwi+w9LdfrNiXaAkSI0EQTqRUO6YjMVqWQv6vF/zc4h0uumlPc1XPg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/eqcss/1.9.2/EQCSS.js" integrity="sha512-lGvnXUy+XoMNOzBbifUhFrV0smwGplZ+3mYObs4puU0dB2ncZFam9Quows08Fr/nU7NJcPCk2D1GfFH4hGu/5w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+        @element #outer_div {
+            $this {
+                width: 100%;
+                position: relative;
+            }
+            $this #content,
+            $this #dummy_div,
+            $this #help_div {
+                position: absolute;
+                transform: scale(eval('offsetWidth / 1140'));
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Preloader GIF -->
-    <div id="loading">
-        <img id="loading_img" src="./assets/Preloader_2.gif" alt="Loading..." />
-    </div>
-    <div id="outer_div">
+    <div class="container d-flex justify-content-center  " id="outer_div">
+        <!-- Preloader GIF -->
+        <div id="loading">
+            <img id="loading_img" src="./assets/Preloader_2.gif" alt="Loading..." />
+        </div>
         <!-- Page Content -->
         <div id="content" class="position-relative animate__animated animate__zoomIn" style="display: none;">
 
             <!-- Top Section -->
-            <div class="d-flex justify-content-center mt-4">
+            <div id="top_section" class="d-flex justify-content-center mt-4">
                 <div class="d-flex justify-content-between" style="width: 800px;">
                     <h5> Complete the words.</h5>
                     <div style="background-color: rgb(255, 255, 255);">
@@ -36,8 +56,8 @@
 
             <!-- Middle Section -->
             <div class="d-flex justify-content-center mt-4">
-                <div class="d-flex justify-content-center position-relative" style="width: 830px; height: 460px; background-color: #0fa0c5;">
-                    <div id="unselect" class="row position-absolute " style="width: 790px;height: 105%;top: -10px; background-color: white; border-radius: 15px; border: 3px solid #f5821f;">
+                <div id="blue_section" class="d-flex justify-content-center position-relative" style="width: 830px; height: 460px; background-color: #0fa0c5;">
+                    <div id="overlay" class="row position-absolute " style="width: 790px;height: 105%;top: -10px; background-color: white; border-radius: 15px; border: 3px solid #f5821f;">
                         <div class="col-10 buttons d-flex mb-4">
                             <input id="btn1" class="btn " onclick="choiceA()" type="button" value="a" class="m-1">
                             <input id="btn2" class="btn " onclick="choiceP()" type="button" value="p" class="m-1">
@@ -120,7 +140,7 @@
             </div>
         </div>
         <div id="help_div">
-            <div id="help_content" class="position-relative">
+            <div id="help_content">
                 <img onclick="closeHelp()" class="position-sticky close_btn" src="assets/close_icon.png"> Help content goes here.
             </div>
         </div>
